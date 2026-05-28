@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f7f4ef;
+    color:#111;
+    overflow-x:hidden;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:120px 8%;
+
+    gap:90px;
+}
+
+/* IMAGE */
+
+.about-image{
+    flex:1;
+    position:relative;
+}
+
+.about-image img{
+    width:100%;
+    height:850px;
+
+    object-fit:cover;
+
+    border-radius:2px;
+
+    transition:0.5s ease;
+}
+
+.about-image img:hover{
+    transform:scale(1.01);
+}
+
+/* CONTENT */
+
+.about-content{
+    flex:1;
+    max-width:560px;
+}
+
+.subtitle{
+    font-family:'Montserrat', sans-serif;
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    color:#a58f72;
+
+    margin-bottom:25px;
+
+    display:block;
+}
+
+.about-content h1{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:78px;
+    font-weight:300;
+
+    line-height:1;
+
+    margin-bottom:45px;
+
+    color:#111;
+}
+
+.about-content p{
+    font-family:'Montserrat', sans-serif;
+
+    font-size:17px;
+
+    line-height:2.1;
+
+    color:#555;
+
+    margin-bottom:28px;
+
+    font-weight:300;
+}
+
+/* SMALL DETAILS */
+
+.line{
+    width:70px;
+    height:1px;
+
+    background:#c6b49b;
+
+    margin-bottom:35px;
+}
+
+/* BUTTON */
+
+.about-btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:15px 40px;
+
+    border:1px solid #111;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-family:'Montserrat', sans-serif;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    transition:0.4s ease;
+}
+
+.about-btn:hover{
+    background:#111;
+    color:#fff;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .about{
+        flex-direction:column;
+        gap:60px;
+        padding:80px 7%;
+    }
+
+    .about-image img{
+        height:600px;
+    }
+
+    .about-content{
+        max-width:100%;
+    }
+
+    .about-content h1{
+        font-size:58px;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .about{
+        padding:60px 6%;
+    }
+
+    .about-image img{
+        height:450px;
+    }
+
+    .about-content h1{
+        font-size:44px;
+    }
+
+    .about-content p{
+        font-size:15px;
+        line-height:1.9;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="about">
+
+    <!-- IMAGE -->
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400&auto=format&fit=crop" alt="Restaurant Interior">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="about-content">
+
+        <span class="subtitle">OUR PHILOSOPHY</span>
+
+        <div class="line"></div>
+
+        <h1>Philosophy</h1>
+
+        <p>
+            At Mingles, each dish begins with carefully selected ingredients
+            and a profound respect for nature’s rhythm. Our culinary approach
+            blends contemporary creativity with traditional techniques,
+            creating flavors that feel both refined and deeply authentic.
+        </p>
+
+        <p>
+            We believe dining should be more than a meal — it should become
+            an emotional experience. Every texture, aroma, and presentation
+            is thoughtfully designed to create harmony between food,
+            atmosphere, and human connection.
+        </p>
+
+        <p>
+            Inspired by elegance, simplicity, and seasonality, our philosophy
+            celebrates the beauty of detail and the timeless pleasure of
+            gathering around exceptional cuisine.
+        </p>
+
+        <a href="#" class="about-btn">DISCOVER MORE</a>
+
+    </div>
+
+</section>
+
+</body>
+</html>
